@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="css/mylabtest.css">
+    <link rel="stylesheet" href="css/myutils.css">
+
+</head>
+
+<body>
+    <main>
+        <!-- Form Container to hold the form and image -->
+        <div class="formcontainer">
+            <div class="formcontent">
+                <div class="gridbox">
+                    <!-- Personal Details -->
+                    <div class="griditemheader">1. Your Contact Details</div>
+                    <input class="input-bottom-border" type="text" placeholder="Full Name" />
+                    <input class="input-bottom-border" type="text" placeholder="Patient Id if exists" />
+                    <input class="input-bottom-border" type="number" placeholder="Contact Number" min="0000000000" max="9999999999" />
+                    <input class="input-bottom-border" type="email" placeholder="Email Id" />
+
+                    <!-- Address Details -->
+                    <div class="griditemheader">2. Address</div>
+                    <input class="input-bottom-border" type="text" placeholder="H-No" />
+                    <input class="input-bottom-border" type="text" placeholder="Street" />
+                    <input class="input-bottom-border" type="text" placeholder="Area" />
+                    <input class="input-hidden" />
+                    <label for="districtdropdown" class="griditem-sub-header">District</label>
+                    <select id="districtdropdown" class="dropdown">District
+                        <option value="0">Choose</option>
+                        <option value="1">Pune</option>
+                        <option value="2">Mumbai</option>
+                        <option value="3">Nashik</option>
+                        <option value="4">Nagpur</option>
+                        <option value="5">Kolhapur</option>
+                        <option value="6">Solapur</option>
+                        <option value="7">Pandarpur</option>
+                    </select>
+
+                    <!-- Test type -->
+                    <div class="griditemheader">3. Choose the test type</div>
+                    <div><input type="checkbox" id="cbc" name="cbc" value="CBC">
+                        <label for="cbc">CBC</label>
+                    </div>
+                    <div><input type="checkbox" id="complete-urine" name="complete-urine" value="complete-urine">
+                        <label for="complete-urine">Complete Urine</label>
+                    </div>
+                    <div><input type="checkbox" id="lipid-profile" name="lipid-profile" value="lipid-profile">
+                        <label for="lipid-profile">Lipid Profile</label>
+                    </div>
+                    <div><input type="checkbox" id="tsh" name="tsh" value="tsh">
+                        <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+                    </div>
+                    <div><input type="checkbox" id="glucose-test" name="glucose-test" value="glucose-test">
+                        <label for="glucose-test">Glucose Test</label>
+                    </div>
+
+                    <!-- Report Hard Copy -->
+                    
+                    <div class="griditemheader">4. Do you want a hard copy of the report also?</div>
+                    <div>
+                        <input type="radio" id="want-copy" name="want-copy" value="yes">
+                        <label for="want-copy">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dont-want-copy" name="want-copy" value="no">
+                        <label for="dont-want-copy">No</label>
+                    </div>
+                    
+                    <!-- Date and Time Input -->
+                    <div class="griditemheader">5. Select your comfortable Date and Time</div>
+                    <input type="datetime-local" min="yyyy-mm-ddThh:mm" value="yyyy-mm-ddT??:??" >
+                </div>
+
+            </div>
+            <div class="formcontent">
+                <img class="labtestimage" src="images/Lab-Test/lab-test.jpg" alt="Lab Test Image">
+            </div>
+        </div>
+        <div class="buttonscontainer">
+            <button type="button" class="button-styler" onclick="">Reset</button>
+            <button type="button" class="button-styler" onclick="">Submit</button>
+        </div>
+    </main>
+
+    <!-- Footer of the page -->
+    <footer class="flex-all-center">
+        <p>&copy; copyright. Only for demonstration purposes</p>
+    </footer>
+</body>
+
+</html>
